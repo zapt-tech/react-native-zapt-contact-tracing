@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5C98AF7C249CFF35006AC6AD /* ZaptContactTracing.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C98AF7B249CFF35006AC6AD /* ZaptContactTracing.m */; };
+		745B69AFB627DCE216F0DA10 /* Pods_ZaptContactTracing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67EFAD5A99EF1A8946C38D9 /* Pods_ZaptContactTracing.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,8 +25,11 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libZaptContactTracing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZaptContactTracing.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F103217105432848AA76853 /* Pods-ZaptContactTracing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZaptContactTracing.release.xcconfig"; path = "Target Support Files/Pods-ZaptContactTracing/Pods-ZaptContactTracing.release.xcconfig"; sourceTree = "<group>"; };
 		5C98AF7A249CFF35006AC6AD /* ZaptContactTracing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZaptContactTracing.h; sourceTree = "<group>"; };
 		5C98AF7B249CFF35006AC6AD /* ZaptContactTracing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZaptContactTracing.m; sourceTree = "<group>"; };
+		AF86A1791CD8A201F55538F2 /* Pods-ZaptContactTracing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZaptContactTracing.debug.xcconfig"; path = "Target Support Files/Pods-ZaptContactTracing/Pods-ZaptContactTracing.debug.xcconfig"; sourceTree = "<group>"; };
+		E67EFAD5A99EF1A8946C38D9 /* Pods_ZaptContactTracing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZaptContactTracing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				745B69AFB627DCE216F0DA10 /* Pods_ZaptContactTracing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +59,26 @@
 				5C98AF7B249CFF35006AC6AD /* ZaptContactTracing.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				5C98AF7D249D05C9006AC6AD /* Frameworks */,
+				61D801B4C17941EA029B05CF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		5C98AF7D249D05C9006AC6AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E67EFAD5A99EF1A8946C38D9 /* Pods_ZaptContactTracing.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61D801B4C17941EA029B05CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF86A1791CD8A201F55538F2 /* Pods-ZaptContactTracing.debug.xcconfig */,
+				3F103217105432848AA76853 /* Pods-ZaptContactTracing.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +88,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "ZaptContactTracing" */;
 			buildPhases = (
+				37EA7C235A5C9490C31EBA2C /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -115,6 +133,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37EA7C235A5C9490C31EBA2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZaptContactTracing-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
@@ -243,6 +286,7 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF86A1791CD8A201F55538F2 /* Pods-ZaptContactTracing.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -260,6 +304,7 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F103217105432848AA76853 /* Pods-ZaptContactTracing.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

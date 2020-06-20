@@ -1,0 +1,6 @@
+framework module Pods_ZaptContactTracing {
+  umbrella header "Pods-ZaptContactTracing-umbrella.h"
+
+  export *
+  module * { export * }
+}
