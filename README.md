@@ -12,3 +12,6 @@ Install a library with native dependencies:
 Link your native dependencies:
 
 `npx react-native link`
+
+### Step 3
+cd ios && pod install

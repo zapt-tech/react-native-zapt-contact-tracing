@@ -1,16 +1,16 @@
 PODS:
-  - ZaptContactTracing_iOS_SDK (1.0.1)
+  - ZaptContactTracing_iOS_SDK (1.0.2)
 
 DEPENDENCIES:
-  - ZaptContactTracing_iOS_SDK (= 1.0.1)
+  - ZaptContactTracing_iOS_SDK (= 1.0.2)
 
 SPEC REPOS:
   trunk:
     - ZaptContactTracing_iOS_SDK
 
 SPEC CHECKSUMS:
-  ZaptContactTracing_iOS_SDK: fac24412345f73c903978f1c10511a5a380c84bb
+  ZaptContactTracing_iOS_SDK: a331e863157acca281bd40b66fa3cf492a46e752
 
-PODFILE CHECKSUM: c8916d8b41dcc13b74b3e20b58e4bc34938d47fc
+PODFILE CHECKSUM: 8f430a757a5e0290b47ce6c4944c27089e88b47c
 
 COCOAPODS: 1.9.3
