@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.dependency "React"
-  s.dependency 'ZaptContactTracing_iOS_SDK', '1.0.3'
+  s.dependency 'ZaptContactTracing_iOS_SDK', '1.0.4'
 end
 
