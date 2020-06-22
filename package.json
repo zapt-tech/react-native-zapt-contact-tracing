@@ -26,7 +26,7 @@
     "name": "Your Name",
     "email": "yourname@email.com"
   },
-  "license": "MIT",
+  "license": "Copyright",
   "licenseFilename": "LICENSE",
   "readmeFilename": "README.md",
   "peerDependencies": {

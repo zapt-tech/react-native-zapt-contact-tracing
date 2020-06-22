@@ -8,16 +8,15 @@ Pod::Spec.new do |s|
   s.summary      = package["description"]
   s.description  = "react-native-zapt-contact-tracing"
   s.homepage     = "https://www.zapt.tech"
-  # brief license entry:
-  s.license      = "Copyright"
+  s.license      = package["license"]
   s.authors      = { "Zapt Tech" => "contato@zapt.tech" }
   s.platforms    = { :ios => "10.0" }
-  s.source       = { :git => "https://github.com/zapt-tech/react-native-zapt-contact-tracing.git", :tag => "1.0.2" }
+  s.source       = { :git => "https://github.com/zapt-tech/react-native-zapt-contact-tracing.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,c,m,swift}"
   s.requires_arc = true
 
   s.dependency "React"
-  s.dependency 'ZaptContactTracing_iOS_SDK', '1.0.2'
+  s.dependency 'ZaptContactTracing_iOS_SDK', '1.0.3'
 end
 

@@ -24,6 +24,6 @@ target 'ZaptContactTracing' do
 #  pod 'React-jsiexecutor', :path => '../node_modules/react-native/ReactCommon/jsiexecutor'
 #  pod 'React-jsinspector', :path => '../node_modules/react-native/ReactCommon/jsinspector'
 #  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
-  pod 'ZaptContactTracing_iOS_SDK', '1.0.2'
+  pod 'ZaptContactTracing_iOS_SDK', '1.0.3'
 end
 
