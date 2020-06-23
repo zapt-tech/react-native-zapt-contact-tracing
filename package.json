@@ -1,7 +1,7 @@
 {
   "name": "react-native-zapt-contact-tracing",
   "title": "React Native Zapt Contact Tracing",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React Native Zapt Contact Tracing",
   "main": "index.js",
   "files": [
